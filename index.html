@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1209f60da0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mainContain">
+        <div class="paymentContainer">
+            <h1>Payment</h1>
+            <p>complite your payment</p>
+            <div class="paymentDataContainer">
+                <h1><i class="fa-solid fa-dollar-sign" style="color: gray;"></i>1555  USD</h1>
+                <hr>
+                <div class="flexcontainer">
+                    
+                    <p><i class="fa-solid fa-circle-check" style="color: green;"></i>  messing</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: green;"></i> analysis</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: green;"></i> suport</p>
+                    <p> <i class="fa-solid fa-circle-check" style="color: green;"></i> discount</p>
+                </div>
+            </div>
+            <div class="cardData">
+                <h3>Pay With Card</h3>
+                <input type="number" class="cardNumber">
+                <input type="text" class="date" placeholder="mm/yy" name="" id="">
+                <input type="number" class="cvv" placeholder="CVV" name="" id="">
+                <button class="makePayment" onclick="makePayment()">Make Payment</button>
+            </div>
+            
+        </div>
+        <div class="invoiceContainer" style="visibility: hidden;">
+
+            <div class="invoicetag"><h1>Invoice</h1>
+            <p><b>Downlode</b></p></div>
+
+            <div class="primeFee">
+                    <div class="primenbertag"><p>PrimeMemeber</p>
+                    <p><b>$100</b></p></div>
+                        <hr>
+                    <div class="feetag"><p>fee</p>
+                    <p><b>$10</b></p></div>
+            </div>
+            
+            <div class="totalTag"><p> <b>Total Amount</b> </p>
+            <h2><b>$110</b></h2></div>
+        </div>
+        <div class="removeContainer" style="visibility: hidden;" >
+            <!-- <div class="removeContainer"  > -->
+
+            <h2>Remove?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+            <button  class='confirmButton' onclick="confirm()">confirm</button>
+            <button class='backButton' onclick="takemeback()"> take me back</button>
+        </div>
+        <div class="susecssContainer" style="visibility: hidden;">
+            <i class="fa-solid fa-circle-check fa-5x" id="icon-sucess" style="color: #ffff;"></i>
+            <h1>Sucess</h1>
+            <p>your payment was proccessed</p>
+        </div>
+    </div>
+    
+<script src="screept.js"></script>
+<!-- <script src="https://kit.fontawesome.com/1209f60da0.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
